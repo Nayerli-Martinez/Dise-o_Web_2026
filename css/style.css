@@ -1,42 +1,89 @@
+/* Fondo general y tipografía */
 body {
-    background-color: #dff3f3;
-    font-family: "Times New Roman", serif;
-    margin: 20px;
+    background-color: #fff8f0; 
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
+/* Encabezados */
 h1 {
-    font-size: 28px;
+    font-size: 34px;
     font-weight: bold;
-    color: black;
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 26px;
     font-weight: bold;
-    color: black;
+    color: #af80f1; 
     margin-top: 25px;
+    margin-bottom: 15px;
 }
 
-nav {
-    margin-bottom: 20px;
+/* Navbar */
+.navbar {
+    background-color: #a06bea; /* morado */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.navbar-brand, .nav-link {
+    color: #fff;
 }
 
-nav a {
-    color: blue;
-    text-decoration: underline;
-    margin-right: 5px;
+/* Sección Inicio */
+#inicio {
+    background: linear-gradient(135deg, #f4b2e2, #f744bb); 
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+#inicio h2, #inicio p {
+    color: #fff;
 }
 
-p {
+/* Tarjetas de productos */
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6a4c93;
+}
+.card-text {
     font-size: 16px;
-    line-height: 1.6;
-    color: black;
+    color: #555;
 }
 
-a {
-    color: blue;
+/* Botones */
+.btn-primary {
+    background-color: #e85d04;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #f3c9cb;
+}
+.btn-success {
+    background-color: #f7a1ea;
+    border: none;
+}
+.btn-success:hover {
+    background-color: #c5f3ce;
 }
 
-section {
-    margin-bottom: 25px;
-}
+/* Formularios */
+form input, form textarea {
+    border: 1px solid #ddf6f0;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    }
